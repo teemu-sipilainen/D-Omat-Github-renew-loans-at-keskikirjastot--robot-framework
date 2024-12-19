@@ -1,0 +1,3 @@
+library_card_number_input: id=login_MultiILS_username
+pin_code_input: id=login_MultiILS_password
+login_page_login_button: input[name="processLogin"]

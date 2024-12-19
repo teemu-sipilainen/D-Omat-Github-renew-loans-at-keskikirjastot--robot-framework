@@ -1,0 +1,2 @@
+renew_selected_button: xpath=//input[@id='renewSelected']
+loan_row: //table[@class="myresearch-table"]//tr[starts-with(@id, 'recordkeski')]

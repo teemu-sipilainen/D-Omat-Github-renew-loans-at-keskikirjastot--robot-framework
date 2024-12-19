@@ -1,0 +1,134 @@
+{"level":30,"time":"2024-12-12T19:34:30.459Z","pid":16568,"hostname":"TS-LENOVO","msg":"Listening on 55657"}
+(node:16568) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-12-12T19:34:31.089Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-12-12T19:34:31.616Z","pid":16568,"hostname":"TS-LENOVO","msg":"Adding browser to stack: chromium, version: 131.0.6778.33"}
+{"level":30,"time":"2024-12-12T19:34:31.617Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-12-12T19:34:31.616Z","pid":16568,"hostname":"TS-LENOVO","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-12-12T19:34:31.630Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-12-12T19:34:31.631Z","pid":16568,"hostname":"TS-LENOVO","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":768,\"width\":1366}}"}
+{"level":30,"time":"2024-12-12T19:34:31.631Z","pid":16568,"hostname":"TS-LENOVO","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-12T19:34:31.631Z","pid":16568,"hostname":"TS-LENOVO","msg":"Trace file: "}
+{"level":30,"time":"2024-12-12T19:34:31.647Z","pid":16568,"hostname":"TS-LENOVO","msg":"Changed active context"}
+{"level":30,"time":"2024-12-12T19:34:31.647Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method newContext"}
+{"level":30,"time":"2024-12-12T19:34:31.659Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-12-12T19:34:31.659Z","pid":16568,"hostname":"TS-LENOVO","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-12-12T19:34:32.476Z","pid":16568,"hostname":"TS-LENOVO","msg":"Video path: undefined"}
+{"level":30,"time":"2024-12-12T19:34:32.476Z","pid":16568,"hostname":"TS-LENOVO","msg":"Changed active page"}
+{"level":30,"time":"2024-12-12T19:34:35.452Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method newPage"}
+{"level":30,"time":"2024-12-12T19:34:35.488Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-12T19:34:35.498Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-12T19:34:35.507Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-12-12T19:34:35.507Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with css=#loginOptions a in page."}
+{"level":30,"time":"2024-12-12T19:34:35.552Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-12-12T19:34:35.559Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method click"}
+{"level":30,"time":"2024-12-12T19:34:35.559Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with css=#loginOptions a in page."}
+{"level":30,"time":"2024-12-12T19:34:36.159Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method click"}
+{"level":30,"time":"2024-12-12T19:34:36.191Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-12-12T19:34:36.192Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with id=login_MultiILS_username in page."}
+{"level":30,"time":"2024-12-12T19:34:36.714Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method fillText"}
+{"level":30,"time":"2024-12-12T19:34:36.721Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-12-12T19:34:36.721Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with id=login_MultiILS_password in page."}
+{"level":30,"time":"2024-12-12T19:34:37.237Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method fillText"}
+{"level":30,"time":"2024-12-12T19:34:37.245Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method click"}
+{"level":30,"time":"2024-12-12T19:34:37.245Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with input[name=\"processLogin\"] in page."}
+{"level":30,"time":"2024-12-12T19:34:37.797Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method click"}
+{"level":30,"time":"2024-12-12T19:34:37.813Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getElements"}
+{"level":30,"time":"2024-12-12T19:34:37.814Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is disabled, return Locator: //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')] in page."}
+{"level":30,"time":"2024-12-12T19:34:37.814Z","pid":16568,"hostname":"TS-LENOVO","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2024-12-12T19:34:38.463Z","pid":16568,"hostname":"TS-LENOVO","msg":"Found 10 elements."}
+{"level":30,"time":"2024-12-12T19:34:38.464Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getElements"}
+{"level":30,"time":"2024-12-12T19:34:38.485Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getElement"}
+{"level":30,"time":"2024-12-12T19:34:38.486Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][1] in page."}
+{"level":30,"time":"2024-12-12T19:34:38.492Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getElement"}
+{"level":30,"time":"2024-12-12T19:34:38.499Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-12T19:34:38.499Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][1]//td[@class=\"checkedout-status-information\"]//strong[contains(text(), 'Eräpäivä')] in page."}
+{"level":30,"time":"2024-12-12T19:34:38.546Z","pid":16568,"hostname":"TS-LENOVO","msg":"Retrieved text for element //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][1]//td[@class=\"checkedout-status-information\"]//strong[contains(text(), 'Eräpäivä')] containing Eräpäivä: 16.12.2024"}
+{"level":30,"time":"2024-12-12T19:34:38.546Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-12T19:34:38.597Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method click"}
+{"level":30,"time":"2024-12-12T19:34:38.597Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][1]//td[@class=\"text-left checkbox-col\"]//input[@type=\"checkbox\"] in page."}
+{"level":30,"time":"2024-12-12T19:34:39.185Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method click"}
+{"level":30,"time":"2024-12-12T19:34:39.192Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getElement"}
+{"level":30,"time":"2024-12-12T19:34:39.192Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][2] in page."}
+{"level":30,"time":"2024-12-12T19:34:39.197Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getElement"}
+{"level":30,"time":"2024-12-12T19:34:39.204Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][2]//td[@class=\"checkedout-status-information\"]//strong[contains(text(), 'Eräpäivä')] in page."}
+{"level":30,"time":"2024-12-12T19:34:39.204Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-12T19:34:39.229Z","pid":16568,"hostname":"TS-LENOVO","msg":"Retrieved text for element //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][2]//td[@class=\"checkedout-status-information\"]//strong[contains(text(), 'Eräpäivä')] containing Eräpäivä: 17.12.2024"}
+{"level":30,"time":"2024-12-12T19:34:39.229Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-12T19:34:39.265Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][2]//td[@class=\"text-left checkbox-col\"]//input[@type=\"checkbox\"] in page."}
+{"level":30,"time":"2024-12-12T19:34:39.265Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method click"}
+{"level":30,"time":"2024-12-12T19:34:39.799Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method click"}
+{"level":30,"time":"2024-12-12T19:34:39.808Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getElement"}
+{"level":30,"time":"2024-12-12T19:34:39.808Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][3] in page."}
+{"level":30,"time":"2024-12-12T19:34:39.812Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getElement"}
+{"level":30,"time":"2024-12-12T19:34:39.818Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][3]//td[@class=\"checkedout-status-information\"]//strong[contains(text(), 'Eräpäivä')] in page."}
+{"level":30,"time":"2024-12-12T19:34:39.818Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-12T19:34:39.838Z","pid":16568,"hostname":"TS-LENOVO","msg":"Retrieved text for element //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][3]//td[@class=\"checkedout-status-information\"]//strong[contains(text(), 'Eräpäivä')] containing Eräpäivä: 30.12.2024"}
+{"level":30,"time":"2024-12-12T19:34:39.838Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-12T19:34:39.873Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getElement"}
+{"level":30,"time":"2024-12-12T19:34:39.873Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][4] in page."}
+{"level":30,"time":"2024-12-12T19:34:39.878Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getElement"}
+{"level":30,"time":"2024-12-12T19:34:39.884Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-12T19:34:39.884Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][4]//td[@class=\"checkedout-status-information\"]//strong[contains(text(), 'Eräpäivä')] in page."}
+{"level":30,"time":"2024-12-12T19:34:39.902Z","pid":16568,"hostname":"TS-LENOVO","msg":"Retrieved text for element //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][4]//td[@class=\"checkedout-status-information\"]//strong[contains(text(), 'Eräpäivä')] containing Eräpäivä: 30.12.2024"}
+{"level":30,"time":"2024-12-12T19:34:39.902Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-12T19:34:39.937Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getElement"}
+{"level":30,"time":"2024-12-12T19:34:39.937Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][5] in page."}
+{"level":30,"time":"2024-12-12T19:34:39.941Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getElement"}
+{"level":30,"time":"2024-12-12T19:34:39.947Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-12T19:34:39.947Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][5]//td[@class=\"checkedout-status-information\"]//strong[contains(text(), 'Eräpäivä')] in page."}
+{"level":30,"time":"2024-12-12T19:34:39.965Z","pid":16568,"hostname":"TS-LENOVO","msg":"Retrieved text for element //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][5]//td[@class=\"checkedout-status-information\"]//strong[contains(text(), 'Eräpäivä')] containing Eräpäivä: 7.1.2025"}
+{"level":30,"time":"2024-12-12T19:34:39.965Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-12T19:34:39.998Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getElement"}
+{"level":30,"time":"2024-12-12T19:34:39.998Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][6] in page."}
+{"level":30,"time":"2024-12-12T19:34:40.003Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getElement"}
+{"level":30,"time":"2024-12-12T19:34:40.009Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-12T19:34:40.009Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][6]//td[@class=\"checkedout-status-information\"]//strong[contains(text(), 'Eräpäivä')] in page."}
+{"level":30,"time":"2024-12-12T19:34:40.027Z","pid":16568,"hostname":"TS-LENOVO","msg":"Retrieved text for element //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][6]//td[@class=\"checkedout-status-information\"]//strong[contains(text(), 'Eräpäivä')] containing Eräpäivä: 7.1.2025"}
+{"level":30,"time":"2024-12-12T19:34:40.027Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-12T19:34:40.061Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getElement"}
+{"level":30,"time":"2024-12-12T19:34:40.061Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][7] in page."}
+{"level":30,"time":"2024-12-12T19:34:40.065Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getElement"}
+{"level":30,"time":"2024-12-12T19:34:40.072Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-12T19:34:40.072Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][7]//td[@class=\"checkedout-status-information\"]//strong[contains(text(), 'Eräpäivä')] in page."}
+{"level":30,"time":"2024-12-12T19:34:40.089Z","pid":16568,"hostname":"TS-LENOVO","msg":"Retrieved text for element //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][7]//td[@class=\"checkedout-status-information\"]//strong[contains(text(), 'Eräpäivä')] containing Eräpäivä: 7.1.2025"}
+{"level":30,"time":"2024-12-12T19:34:40.089Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-12T19:34:40.123Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getElement"}
+{"level":30,"time":"2024-12-12T19:34:40.123Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][8] in page."}
+{"level":30,"time":"2024-12-12T19:34:40.128Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getElement"}
+{"level":30,"time":"2024-12-12T19:34:40.134Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-12T19:34:40.134Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][8]//td[@class=\"checkedout-status-information\"]//strong[contains(text(), 'Eräpäivä')] in page."}
+{"level":30,"time":"2024-12-12T19:34:40.152Z","pid":16568,"hostname":"TS-LENOVO","msg":"Retrieved text for element //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][8]//td[@class=\"checkedout-status-information\"]//strong[contains(text(), 'Eräpäivä')] containing Eräpäivä: 7.1.2025"}
+{"level":30,"time":"2024-12-12T19:34:40.152Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-12T19:34:40.189Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getElement"}
+{"level":30,"time":"2024-12-12T19:34:40.189Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][9] in page."}
+{"level":30,"time":"2024-12-12T19:34:40.193Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getElement"}
+{"level":30,"time":"2024-12-12T19:34:40.199Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-12T19:34:40.200Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][9]//td[@class=\"checkedout-status-information\"]//strong[contains(text(), 'Eräpäivä')] in page."}
+{"level":30,"time":"2024-12-12T19:34:40.218Z","pid":16568,"hostname":"TS-LENOVO","msg":"Retrieved text for element //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][9]//td[@class=\"checkedout-status-information\"]//strong[contains(text(), 'Eräpäivä')] containing Eräpäivä: 7.1.2025"}
+{"level":30,"time":"2024-12-12T19:34:40.218Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-12T19:34:40.251Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getElement"}
+{"level":30,"time":"2024-12-12T19:34:40.251Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][10] in page."}
+{"level":30,"time":"2024-12-12T19:34:40.255Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getElement"}
+{"level":30,"time":"2024-12-12T19:34:40.262Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getText"}
+{"level":30,"time":"2024-12-12T19:34:40.262Z","pid":16568,"hostname":"TS-LENOVO","msg":"Strict mode is enabled, find Locator with //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][10]//td[@class=\"checkedout-status-information\"]//strong[contains(text(), 'Eräpäivä')] in page."}
+{"level":30,"time":"2024-12-12T19:34:40.279Z","pid":16568,"hostname":"TS-LENOVO","msg":"Retrieved text for element //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][10]//td[@class=\"checkedout-status-information\"]//strong[contains(text(), 'Eräpäivä')] containing Eräpäivä: 9.1.2025"}
+{"level":30,"time":"2024-12-12T19:34:40.279Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getText"}
+{"level":30,"time":"2024-12-12T19:34:40.313Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-12T19:34:40.316Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-12T19:34:40.326Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-12T19:34:40.329Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-12T19:34:40.332Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-12T19:34:40.335Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-12T19:34:40.338Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-12T19:34:40.340Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-12T19:34:40.344Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-12T19:34:40.346Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-12-12T19:34:40.350Z","pid":16568,"hostname":"TS-LENOVO","msg":"Changed active context"}
+{"level":30,"time":"2024-12-12T19:34:40.350Z","pid":16568,"hostname":"TS-LENOVO","msg":"Changing current active page: page=87dd433f-7ecf-4c22-b333-fe301880d54d"}
+{"level":30,"time":"2024-12-12T19:34:40.350Z","pid":16568,"hostname":"TS-LENOVO","msg":"Changed active page"}
+{"level":30,"time":"2024-12-12T19:34:40.354Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-12-12T19:34:40.369Z","pid":16568,"hostname":"TS-LENOVO","msg":"Removed page=69159456-fbd5-4e98-b758-c387f67aacbb from context=c8611912-d58e-4591-9306-01dea837f912 page stack"}
+{"level":30,"time":"2024-12-12T19:34:40.490Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-12-12T19:34:40.627Z","pid":16568,"hostname":"TS-LENOVO","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-12-12T19:34:42.553Z","pid":16568,"hostname":"TS-LENOVO","msg":"End of node method closeAllBrowsers"}

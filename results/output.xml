@@ -1,0 +1,1313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.8 on win32)" generated="2024-12-12T21:34:27.545882" rpa="true" schemaversion="5">
+<suite id="s1" name="Renew-Loans-At-Keskikirjastot--Robot-Framework" source="D:\Omat\Github\renew-loans-at-keskikirjastot--robot-framework">
+<suite id="s1-s1" name="Automation" source="D:\Omat\Github\renew-loans-at-keskikirjastot--robot-framework\automation">
+<suite id="s1-s1-s1" name="Automate" source="D:\Omat\Github\renew-loans-at-keskikirjastot--robot-framework\automation\automate.robot">
+<kw name="Open Browser And Login" type="SETUP">
+<kw name="Setup Browser" owner="browser_management">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-12-12T21:34:28.116776" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 500.0, "timeout": 30000.0, "tracesDir": "D:\\Omat\\Github\\renew-loans-at-keskikirjastot--robot-framework\\results\\browser\\traces\\temp\\12ed165b-5f66-4b0b-89c2-ac9a739cc3ea"}</msg>
+<msg time="2024-12-12T21:34:28.207040" level="INFO">Starting Browser process D:\Omat\Github\renew-loans-at-keskikirjastot--robot-framework\.venv\Lib\site-packages\Browser\wrapper\index.js using port 55657</msg>
+<msg time="2024-12-12T21:34:28.207040" level="INFO">Node startup parameters: ['node', 'D:\\Omat\\Github\\renew-loans-at-keskikirjastot--robot-framework\\.venv\\Lib\\site-packages\\Browser\\wrapper\\index.js', '55657']</msg>
+<msg time="2024-12-12T21:34:31.627954" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":500,"timeout":30000,"tracesDir":"D:\\Omat\\Github\\renew-loans-at-keskikirjastot--robot-framework\\results\\browser\\traces\\temp\\12ed165b-5f66-4b0b-89c2-ac9a739cc3ea"}</msg>
+<arg>browser=${browser}</arg>
+<arg>headless=${headless}</arg>
+<arg>slowMo=${slowMo}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-12-12T21:34:28.114776" elapsed="3.514178"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2024-12-12T21:34:31.636953" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 768,
+    "width": 1366
+  }
+}</msg>
+<msg time="2024-12-12T21:34:31.659956" level="INFO">Successfully created context. </msg>
+<msg time="2024-12-12T21:34:31.660955" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 768, 'width': 1366}}</msg>
+<arg>viewport=${viewport}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2024-12-12T21:34:31.629953" elapsed="0.031002"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-12-12T21:34:35.463588" level="INFO">Successfully initialized new page object and opened url: https://keski.finna.fi/</msg>
+<arg>url=${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-12-12T21:34:31.660955" elapsed="3.803633"/>
+</kw>
+<arg>url=${url}</arg>
+<arg>headless=False</arg>
+<status status="PASS" start="2024-12-12T21:34:28.111896" elapsed="7.352692"/>
+</kw>
+<status status="PASS" start="2024-12-12T21:34:28.108106" elapsed="7.356482"/>
+</kw>
+<test id="s1-s1-s1-t1" name="Renew Loans" line="17">
+<kw name="Click Login Button" owner="front_page">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-12-12T21:34:35.563108" level="INFO">Waited for Element with selector css=#loginOptions a at state visible</msg>
+<arg>${front_page_login_button}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-12-12T21:34:35.512104" elapsed="0.052005"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-12-12T21:34:35.566110" level="INFO">Clicks the element 'css=#loginOptions a'.</msg>
+<arg>${front_page_login_button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-12T21:34:35.565108" elapsed="0.624317"/>
+</kw>
+<status status="PASS" start="2024-12-12T21:34:35.510102" elapsed="0.679323"/>
+</kw>
+<kw name="Fill Login Form And Submit" owner="login_page">
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-12-12T21:34:36.198432" level="INFO">Fills the text '415L00098' in the given field.</msg>
+<arg>${library_card_number_input}</arg>
+<arg>%{LIBRARY_CARD_NUMBER}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-12-12T21:34:36.195429" elapsed="0.530121"/>
+</kw>
+<kw name="Fill Secret" owner="Browser">
+<arg>${pin_code_input}</arg>
+<arg>%PIN_CODE</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Fills the given secret from ``variable_name`` into the
+text field found by ``selector``.</doc>
+<status status="PASS" start="2024-12-12T21:34:36.725550" elapsed="0.524605"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-12-12T21:34:37.251155" level="INFO">Clicks the element 'input[name="processLogin"]'.</msg>
+<arg>${login_page_login_button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-12T21:34:37.250155" elapsed="0.558606"/>
+</kw>
+<status status="PASS" start="2024-12-12T21:34:36.192426" elapsed="1.616335"/>
+</kw>
+<kw name="Renew Loans" owner="my_research_page">
+<kw name="Get Elements" owner="Browser">
+<msg time="2024-12-12T21:34:38.478855" level="INFO">Found locator('//tr[starts-with(@id, \'recordkeski\') and contains(@class, \'myresearch-row\')]').first(),locator('//tr[starts-with(@id, \'recordkeski\') and contains(@class, \'myresearch-row\')]').nth(1),locator('//tr[starts-with(@id, \'recordkeski\') and contains(@class, \'myresearch-row\')]').nth(2),locator('//tr[starts-with(@id, \'recordkeski\') and contains(@class, \'myresearch-row\')]').nth(3),locator('//tr[starts-with(@id, \'recordkeski\') and contains(@class, \'myresearch-row\')]').nth(4),locator('//tr[starts-with(@id, \'recordkeski\') and contains(@class, \'myresearch-row\')]').nth(5),locator('//tr[starts-with(@id, \'recordkeski\') and contains(@class, \'myresearch-row\')]').nth(6),locator('//tr[starts-with(@id, \'recordkeski\') and contains(@class, \'myresearch-row\')]').nth(7),locator('//tr[starts-with(@id, \'recordkeski\') and contains(@class, \'myresearch-row\')]').nth(8),locator('//tr[starts-with(@id, \'recordkeski\') and contains(@class, \'myresearch-row\')]').nth(9) Locators successfully.</msg>
+<msg time="2024-12-12T21:34:38.478855" level="INFO">${rows} = ["//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')] &gt;&gt; nth=0", "//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')] &gt;&gt; nth=1", "//tr[starts-with(@id...</msg>
+<var>${rows}</var>
+<arg>//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2024-12-12T21:34:37.819272" elapsed="0.659583"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:38.478855" level="INFO">len(["//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')] &gt;&gt; nth=0", "//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')] &gt;&gt; nth=1", "//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')] &gt;&gt; nth=2", "//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')] &gt;&gt; nth=3", "//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')] &gt;&gt; nth=4", "//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')] &gt;&gt; nth=5", "//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')] &gt;&gt; nth=6", "//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')] &gt;&gt; nth=7", "//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')] &gt;&gt; nth=8", "//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')] &gt;&gt; nth=9"])</msg>
+<arg>len(${rows})</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:38.478855" elapsed="0.000000"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-12-12T21:34:38.503672" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-12T21:34:38.503672" level="INFO">${row} = //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][1]</msg>
+<var>${row}</var>
+<arg>//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][${index + 1}]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-12-12T21:34:38.478855" elapsed="0.025817"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-12-12T21:34:38.556727" level="INFO">Text: 'Eräpäivä: 16.12.2024'</msg>
+<msg time="2024-12-12T21:34:38.557726" level="INFO">${due_date_text} = Eräpäivä: 16.12.2024</msg>
+<var>${due_date_text}</var>
+<arg>${row}//td[@class="checkedout-status-information"]//strong[contains(text(), 'Eräpäivä')]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-12T21:34:38.504672" elapsed="0.053054"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:38.559133" level="INFO">Due Date Text: Eräpäivä: 16.12.2024</msg>
+<arg>Due Date Text: ${due_date_text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:38.557726" elapsed="0.004406"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${due_date_text}' == ''</arg>
+<arg>Fail</arg>
+<arg>Eräpäiväteksti on tyhjä rivillä ${index + 1}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-12-12T21:34:38.562132" elapsed="0.001997"/>
+</kw>
+<kw name="Remove String" owner="String">
+<msg time="2024-12-12T21:34:38.565129" level="INFO">${due_date_string} =  16.12.2024</msg>
+<var>${due_date_string}</var>
+<arg>${due_date_text}</arg>
+<arg>${DUE_DATE_PREFIX}</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<status status="PASS" start="2024-12-12T21:34:38.564129" elapsed="0.002001"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:38.567130" level="INFO">After Removing Prefix:  16.12.2024</msg>
+<arg>After Removing Prefix: ${due_date_string}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:38.566130" elapsed="0.001000"/>
+</kw>
+<kw name="Strip String" owner="String">
+<msg time="2024-12-12T21:34:38.569130" level="INFO">${due_date_string} = 16.12.2024</msg>
+<var>${due_date_string}</var>
+<arg>${due_date_string}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2024-12-12T21:34:38.568130" elapsed="0.001000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:38.571130" level="INFO">Due Date String (Stripped): 16.12.2024</msg>
+<arg>Due Date String (Stripped): ${due_date_string}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:38.570130" elapsed="0.002000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-12-12T21:34:38.584686" level="INFO">${due_date} = 2024-12-16</msg>
+<var>${due_date}</var>
+<arg>${due_date_string}</arg>
+<arg>result_format=%Y-%m-%d</arg>
+<arg>date_format=%d.%m.%Y</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-12-12T21:34:38.572130" elapsed="0.012556"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:38.586684" level="INFO">Converted Due Date: 2024-12-16</msg>
+<arg>Converted Due Date: ${due_date}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:38.585683" elapsed="0.001001"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-12-12T21:34:38.588684" level="INFO">${current_date} = 2024-12-12</msg>
+<var>${current_date}</var>
+<arg>result_format=%Y-%m-%d</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-12-12T21:34:38.587684" elapsed="0.001000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:38.589684" level="INFO">Current Date: 2024-12-12</msg>
+<arg>Current Date: ${current_date}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:38.588684" elapsed="0.002001"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-12-12T21:34:38.592686" level="INFO">${difference} = 4</msg>
+<var>${difference}</var>
+<arg>(datetime.datetime.strptime('${due_date}', '%Y-%m-%d') - datetime.datetime.strptime('${current_date}', '%Y-%m-%d')).days</arg>
+<arg>datetime</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-12-12T21:34:38.590685" elapsed="0.005856"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:38.597540" level="INFO">Difference in Days: 4</msg>
+<arg>Difference in Days: ${difference}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:38.596541" elapsed="0.002001"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click" owner="Browser">
+<msg time="2024-12-12T21:34:38.603540" level="INFO">Clicks the element '//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][1]//td[@class="text-left checkbox-col"]//input[@type="checkbox"]'.</msg>
+<arg>${row}//td[@class="text-left checkbox-col"]//input[@type="checkbox"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-12T21:34:38.600541" elapsed="0.595956"/>
+</kw>
+<arg>${difference} &lt; ${DAYS_TO_EXPIRE}</arg>
+<arg>Click</arg>
+<arg>${row}//td[@class="text-left checkbox-col"]//input[@type="checkbox"]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-12-12T21:34:38.598542" elapsed="0.597955"/>
+</kw>
+<var name="${index}">0</var>
+<status status="PASS" start="2024-12-12T21:34:38.478855" elapsed="0.717642"/>
+</iter>
+<iter>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-12-12T21:34:39.208498" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-12T21:34:39.208498" level="INFO">${row} = //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][2]</msg>
+<var>${row}</var>
+<arg>//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][${index + 1}]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-12-12T21:34:39.198496" elapsed="0.010002"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-12-12T21:34:39.239816" level="INFO">Text: 'Eräpäivä: 17.12.2024'</msg>
+<msg time="2024-12-12T21:34:39.240816" level="INFO">${due_date_text} = Eräpäivä: 17.12.2024</msg>
+<var>${due_date_text}</var>
+<arg>${row}//td[@class="checkedout-status-information"]//strong[contains(text(), 'Eräpäivä')]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.210008" elapsed="0.030808"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.244530" level="INFO">Due Date Text: Eräpäivä: 17.12.2024</msg>
+<arg>Due Date Text: ${due_date_text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.241815" elapsed="0.002715"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${due_date_text}' == ''</arg>
+<arg>Fail</arg>
+<arg>Eräpäiväteksti on tyhjä rivillä ${index + 1}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.244530" elapsed="0.000000"/>
+</kw>
+<kw name="Remove String" owner="String">
+<msg time="2024-12-12T21:34:39.244530" level="INFO">${due_date_string} =  17.12.2024</msg>
+<var>${due_date_string}</var>
+<arg>${due_date_text}</arg>
+<arg>${DUE_DATE_PREFIX}</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.244530" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.244530" level="INFO">After Removing Prefix:  17.12.2024</msg>
+<arg>After Removing Prefix: ${due_date_string}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.244530" elapsed="0.000000"/>
+</kw>
+<kw name="Strip String" owner="String">
+<msg time="2024-12-12T21:34:39.244530" level="INFO">${due_date_string} = 17.12.2024</msg>
+<var>${due_date_string}</var>
+<arg>${due_date_string}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.244530" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.244530" level="INFO">Due Date String (Stripped): 17.12.2024</msg>
+<arg>Due Date String (Stripped): ${due_date_string}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.244530" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-12-12T21:34:39.244530" level="INFO">${due_date} = 2024-12-17</msg>
+<var>${due_date}</var>
+<arg>${due_date_string}</arg>
+<arg>result_format=%Y-%m-%d</arg>
+<arg>date_format=%d.%m.%Y</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.244530" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.261135" level="INFO">Converted Due Date: 2024-12-17</msg>
+<arg>Converted Due Date: ${due_date}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.259540" elapsed="0.002593"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-12-12T21:34:39.263134" level="INFO">${current_date} = 2024-12-12</msg>
+<var>${current_date}</var>
+<arg>result_format=%Y-%m-%d</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.262133" elapsed="0.001001"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.265133" level="INFO">Current Date: 2024-12-12</msg>
+<arg>Current Date: ${current_date}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.264134" elapsed="0.000999"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.267134" level="INFO">${difference} = 5</msg>
+<var>${difference}</var>
+<arg>(datetime.datetime.strptime('${due_date}', '%Y-%m-%d') - datetime.datetime.strptime('${current_date}', '%Y-%m-%d')).days</arg>
+<arg>datetime</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.266135" elapsed="0.001999"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.269134" level="INFO">Difference in Days: 5</msg>
+<arg>Difference in Days: ${difference}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.268134" elapsed="0.001000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click" owner="Browser">
+<msg time="2024-12-12T21:34:39.272134" level="INFO">Clicks the element '//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][2]//td[@class="text-left checkbox-col"]//input[@type="checkbox"]'.</msg>
+<arg>${row}//td[@class="text-left checkbox-col"]//input[@type="checkbox"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.271135" elapsed="0.540730"/>
+</kw>
+<arg>${difference} &lt; ${DAYS_TO_EXPIRE}</arg>
+<arg>Click</arg>
+<arg>${row}//td[@class="text-left checkbox-col"]//input[@type="checkbox"]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.269134" elapsed="0.542731"/>
+</kw>
+<var name="${index}">1</var>
+<status status="PASS" start="2024-12-12T21:34:39.197497" elapsed="0.614368"/>
+</iter>
+<iter>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-12-12T21:34:39.811865" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-12T21:34:39.811865" level="INFO">${row} = //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][3]</msg>
+<var>${row}</var>
+<arg>//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][${index + 1}]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-12-12T21:34:39.811865" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-12-12T21:34:39.845013" level="INFO">Text: 'Eräpäivä: 30.12.2024'</msg>
+<msg time="2024-12-12T21:34:39.845013" level="INFO">${due_date_text} = Eräpäivä: 30.12.2024</msg>
+<var>${due_date_text}</var>
+<arg>${row}//td[@class="checkedout-status-information"]//strong[contains(text(), 'Eräpäivä')]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.811865" elapsed="0.033148"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.845013" level="INFO">Due Date Text: Eräpäivä: 30.12.2024</msg>
+<arg>Due Date Text: ${due_date_text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.845013" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${due_date_text}' == ''</arg>
+<arg>Fail</arg>
+<arg>Eräpäiväteksti on tyhjä rivillä ${index + 1}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.845013" elapsed="0.000000"/>
+</kw>
+<kw name="Remove String" owner="String">
+<msg time="2024-12-12T21:34:39.845013" level="INFO">${due_date_string} =  30.12.2024</msg>
+<var>${due_date_string}</var>
+<arg>${due_date_text}</arg>
+<arg>${DUE_DATE_PREFIX}</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.845013" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.845013" level="INFO">After Removing Prefix:  30.12.2024</msg>
+<arg>After Removing Prefix: ${due_date_string}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.845013" elapsed="0.000000"/>
+</kw>
+<kw name="Strip String" owner="String">
+<msg time="2024-12-12T21:34:39.845013" level="INFO">${due_date_string} = 30.12.2024</msg>
+<var>${due_date_string}</var>
+<arg>${due_date_string}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.845013" elapsed="0.015143"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.860968" level="INFO">Due Date String (Stripped): 30.12.2024</msg>
+<arg>Due Date String (Stripped): ${due_date_string}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.860968" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-12-12T21:34:39.860968" level="INFO">${due_date} = 2024-12-30</msg>
+<var>${due_date}</var>
+<arg>${due_date_string}</arg>
+<arg>result_format=%Y-%m-%d</arg>
+<arg>date_format=%d.%m.%Y</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.860968" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.860968" level="INFO">Converted Due Date: 2024-12-30</msg>
+<arg>Converted Due Date: ${due_date}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.860968" elapsed="0.000000"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-12-12T21:34:39.860968" level="INFO">${current_date} = 2024-12-12</msg>
+<var>${current_date}</var>
+<arg>result_format=%Y-%m-%d</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.860968" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.860968" level="INFO">Current Date: 2024-12-12</msg>
+<arg>Current Date: ${current_date}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.860968" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.860968" level="INFO">${difference} = 18</msg>
+<var>${difference}</var>
+<arg>(datetime.datetime.strptime('${due_date}', '%Y-%m-%d') - datetime.datetime.strptime('${current_date}', '%Y-%m-%d')).days</arg>
+<arg>datetime</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.860968" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.860968" level="INFO">Difference in Days: 18</msg>
+<arg>Difference in Days: ${difference}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.860968" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${difference} &lt; ${DAYS_TO_EXPIRE}</arg>
+<arg>Click</arg>
+<arg>${row}//td[@class="text-left checkbox-col"]//input[@type="checkbox"]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.860968" elapsed="0.015875"/>
+</kw>
+<var name="${index}">2</var>
+<status status="PASS" start="2024-12-12T21:34:39.811865" elapsed="0.065577"/>
+</iter>
+<iter>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-12-12T21:34:39.877442" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-12T21:34:39.877442" level="INFO">${row} = //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][4]</msg>
+<var>${row}</var>
+<arg>//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][${index + 1}]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-12-12T21:34:39.877442" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-12-12T21:34:39.910923" level="INFO">Text: 'Eräpäivä: 30.12.2024'</msg>
+<msg time="2024-12-12T21:34:39.910923" level="INFO">${due_date_text} = Eräpäivä: 30.12.2024</msg>
+<var>${due_date_text}</var>
+<arg>${row}//td[@class="checkedout-status-information"]//strong[contains(text(), 'Eräpäivä')]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.877442" elapsed="0.033481"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.910923" level="INFO">Due Date Text: Eräpäivä: 30.12.2024</msg>
+<arg>Due Date Text: ${due_date_text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.910923" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${due_date_text}' == ''</arg>
+<arg>Fail</arg>
+<arg>Eräpäiväteksti on tyhjä rivillä ${index + 1}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.910923" elapsed="0.000000"/>
+</kw>
+<kw name="Remove String" owner="String">
+<msg time="2024-12-12T21:34:39.910923" level="INFO">${due_date_string} =  30.12.2024</msg>
+<var>${due_date_string}</var>
+<arg>${due_date_text}</arg>
+<arg>${DUE_DATE_PREFIX}</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.910923" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.910923" level="INFO">After Removing Prefix:  30.12.2024</msg>
+<arg>After Removing Prefix: ${due_date_string}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.910923" elapsed="0.000000"/>
+</kw>
+<kw name="Strip String" owner="String">
+<msg time="2024-12-12T21:34:39.910923" level="INFO">${due_date_string} = 30.12.2024</msg>
+<var>${due_date_string}</var>
+<arg>${due_date_string}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.910923" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.910923" level="INFO">Due Date String (Stripped): 30.12.2024</msg>
+<arg>Due Date String (Stripped): ${due_date_string}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.910923" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-12-12T21:34:39.925934" level="INFO">${due_date} = 2024-12-30</msg>
+<var>${due_date}</var>
+<arg>${due_date_string}</arg>
+<arg>result_format=%Y-%m-%d</arg>
+<arg>date_format=%d.%m.%Y</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.925934" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.925934" level="INFO">Converted Due Date: 2024-12-30</msg>
+<arg>Converted Due Date: ${due_date}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.925934" elapsed="0.000000"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-12-12T21:34:39.925934" level="INFO">${current_date} = 2024-12-12</msg>
+<var>${current_date}</var>
+<arg>result_format=%Y-%m-%d</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.925934" elapsed="0.006206"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.932140" level="INFO">Current Date: 2024-12-12</msg>
+<arg>Current Date: ${current_date}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.932140" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.932140" level="INFO">${difference} = 18</msg>
+<var>${difference}</var>
+<arg>(datetime.datetime.strptime('${due_date}', '%Y-%m-%d') - datetime.datetime.strptime('${current_date}', '%Y-%m-%d')).days</arg>
+<arg>datetime</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.932140" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.932140" level="INFO">Difference in Days: 18</msg>
+<arg>Difference in Days: ${difference}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.932140" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${difference} &lt; ${DAYS_TO_EXPIRE}</arg>
+<arg>Click</arg>
+<arg>${row}//td[@class="text-left checkbox-col"]//input[@type="checkbox"]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.932140" elapsed="0.000000"/>
+</kw>
+<var name="${index}">3</var>
+<status status="PASS" start="2024-12-12T21:34:39.877442" elapsed="0.054698"/>
+</iter>
+<iter>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-12-12T21:34:39.944195" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-12T21:34:39.944195" level="INFO">${row} = //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][5]</msg>
+<var>${row}</var>
+<arg>//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][${index + 1}]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-12-12T21:34:39.932140" elapsed="0.012055"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-12-12T21:34:39.976269" level="INFO">Text: 'Eräpäivä: 7.1.2025'</msg>
+<msg time="2024-12-12T21:34:39.976815" level="INFO">${due_date_text} = Eräpäivä: 7.1.2025</msg>
+<var>${due_date_text}</var>
+<arg>${row}//td[@class="checkedout-status-information"]//strong[contains(text(), 'Eräpäivä')]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.944195" elapsed="0.033229"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.977424" level="INFO">Due Date Text: Eräpäivä: 7.1.2025</msg>
+<arg>Due Date Text: ${due_date_text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.977424" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${due_date_text}' == ''</arg>
+<arg>Fail</arg>
+<arg>Eräpäiväteksti on tyhjä rivillä ${index + 1}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.977424" elapsed="0.000000"/>
+</kw>
+<kw name="Remove String" owner="String">
+<msg time="2024-12-12T21:34:39.977424" level="INFO">${due_date_string} =  7.1.2025</msg>
+<var>${due_date_string}</var>
+<arg>${due_date_text}</arg>
+<arg>${DUE_DATE_PREFIX}</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.977424" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.977424" level="INFO">After Removing Prefix:  7.1.2025</msg>
+<arg>After Removing Prefix: ${due_date_string}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.977424" elapsed="0.000000"/>
+</kw>
+<kw name="Strip String" owner="String">
+<msg time="2024-12-12T21:34:39.977424" level="INFO">${due_date_string} = 7.1.2025</msg>
+<var>${due_date_string}</var>
+<arg>${due_date_string}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.977424" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.977424" level="INFO">Due Date String (Stripped): 7.1.2025</msg>
+<arg>Due Date String (Stripped): ${due_date_string}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.977424" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-12-12T21:34:39.977424" level="INFO">${due_date} = 2025-01-07</msg>
+<var>${due_date}</var>
+<arg>${due_date_string}</arg>
+<arg>result_format=%Y-%m-%d</arg>
+<arg>date_format=%d.%m.%Y</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.977424" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.977424" level="INFO">Converted Due Date: 2025-01-07</msg>
+<arg>Converted Due Date: ${due_date}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.977424" elapsed="0.015509"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-12-12T21:34:39.994061" level="INFO">${current_date} = 2024-12-12</msg>
+<var>${current_date}</var>
+<arg>result_format=%Y-%m-%d</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.994061" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.994061" level="INFO">Current Date: 2024-12-12</msg>
+<arg>Current Date: ${current_date}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.994061" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.994061" level="INFO">${difference} = 26</msg>
+<var>${difference}</var>
+<arg>(datetime.datetime.strptime('${due_date}', '%Y-%m-%d') - datetime.datetime.strptime('${current_date}', '%Y-%m-%d')).days</arg>
+<arg>datetime</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.994061" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:39.994061" level="INFO">Difference in Days: 26</msg>
+<arg>Difference in Days: ${difference}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.994061" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${difference} &lt; ${DAYS_TO_EXPIRE}</arg>
+<arg>Click</arg>
+<arg>${row}//td[@class="text-left checkbox-col"]//input[@type="checkbox"]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-12-12T21:34:39.994061" elapsed="0.000000"/>
+</kw>
+<var name="${index}">4</var>
+<status status="PASS" start="2024-12-12T21:34:39.932140" elapsed="0.061921"/>
+</iter>
+<iter>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-12-12T21:34:40.010822" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-12T21:34:40.010822" level="INFO">${row} = //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][6]</msg>
+<var>${row}</var>
+<arg>//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][${index + 1}]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-12-12T21:34:39.994061" elapsed="0.016761"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-12-12T21:34:40.027468" level="INFO">Text: 'Eräpäivä: 7.1.2025'</msg>
+<msg time="2024-12-12T21:34:40.027468" level="INFO">${due_date_text} = Eräpäivä: 7.1.2025</msg>
+<var>${due_date_text}</var>
+<arg>${row}//td[@class="checkedout-status-information"]//strong[contains(text(), 'Eräpäivä')]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.010822" elapsed="0.016646"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.027468" level="INFO">Due Date Text: Eräpäivä: 7.1.2025</msg>
+<arg>Due Date Text: ${due_date_text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.027468" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${due_date_text}' == ''</arg>
+<arg>Fail</arg>
+<arg>Eräpäiväteksti on tyhjä rivillä ${index + 1}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.027468" elapsed="0.015012"/>
+</kw>
+<kw name="Remove String" owner="String">
+<msg time="2024-12-12T21:34:40.044094" level="INFO">${due_date_string} =  7.1.2025</msg>
+<var>${due_date_string}</var>
+<arg>${due_date_text}</arg>
+<arg>${DUE_DATE_PREFIX}</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.042480" elapsed="0.001614"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.044094" level="INFO">After Removing Prefix:  7.1.2025</msg>
+<arg>After Removing Prefix: ${due_date_string}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.044094" elapsed="0.000000"/>
+</kw>
+<kw name="Strip String" owner="String">
+<msg time="2024-12-12T21:34:40.044094" level="INFO">${due_date_string} = 7.1.2025</msg>
+<var>${due_date_string}</var>
+<arg>${due_date_string}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.044094" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.044094" level="INFO">Due Date String (Stripped): 7.1.2025</msg>
+<arg>Due Date String (Stripped): ${due_date_string}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.044094" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-12-12T21:34:40.044094" level="INFO">${due_date} = 2025-01-07</msg>
+<var>${due_date}</var>
+<arg>${due_date_string}</arg>
+<arg>result_format=%Y-%m-%d</arg>
+<arg>date_format=%d.%m.%Y</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.044094" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.044094" level="INFO">Converted Due Date: 2025-01-07</msg>
+<arg>Converted Due Date: ${due_date}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.044094" elapsed="0.000000"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-12-12T21:34:40.044094" level="INFO">${current_date} = 2024-12-12</msg>
+<var>${current_date}</var>
+<arg>result_format=%Y-%m-%d</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.044094" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.044094" level="INFO">Current Date: 2024-12-12</msg>
+<arg>Current Date: ${current_date}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.044094" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.060757" level="INFO">${difference} = 26</msg>
+<var>${difference}</var>
+<arg>(datetime.datetime.strptime('${due_date}', '%Y-%m-%d') - datetime.datetime.strptime('${current_date}', '%Y-%m-%d')).days</arg>
+<arg>datetime</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.059105" elapsed="0.001652"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.060757" level="INFO">Difference in Days: 26</msg>
+<arg>Difference in Days: ${difference}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.060757" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${difference} &lt; ${DAYS_TO_EXPIRE}</arg>
+<arg>Click</arg>
+<arg>${row}//td[@class="text-left checkbox-col"]//input[@type="checkbox"]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.060757" elapsed="0.000000"/>
+</kw>
+<var name="${index}">5</var>
+<status status="PASS" start="2024-12-12T21:34:39.994061" elapsed="0.066696"/>
+</iter>
+<iter>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-12-12T21:34:40.076266" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-12T21:34:40.077465" level="INFO">${row} = //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][7]</msg>
+<var>${row}</var>
+<arg>//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][${index + 1}]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-12-12T21:34:40.060757" elapsed="0.016708"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-12-12T21:34:40.094263" level="INFO">Text: 'Eräpäivä: 7.1.2025'</msg>
+<msg time="2024-12-12T21:34:40.094263" level="INFO">${due_date_text} = Eräpäivä: 7.1.2025</msg>
+<var>${due_date_text}</var>
+<arg>${row}//td[@class="checkedout-status-information"]//strong[contains(text(), 'Eräpäivä')]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.077465" elapsed="0.016798"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.094263" level="INFO">Due Date Text: Eräpäivä: 7.1.2025</msg>
+<arg>Due Date Text: ${due_date_text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.094263" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${due_date_text}' == ''</arg>
+<arg>Fail</arg>
+<arg>Eräpäiväteksti on tyhjä rivillä ${index + 1}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.094263" elapsed="0.000000"/>
+</kw>
+<kw name="Remove String" owner="String">
+<msg time="2024-12-12T21:34:40.094263" level="INFO">${due_date_string} =  7.1.2025</msg>
+<var>${due_date_string}</var>
+<arg>${due_date_text}</arg>
+<arg>${DUE_DATE_PREFIX}</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.094263" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.094263" level="INFO">After Removing Prefix:  7.1.2025</msg>
+<arg>After Removing Prefix: ${due_date_string}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.094263" elapsed="0.000000"/>
+</kw>
+<kw name="Strip String" owner="String">
+<msg time="2024-12-12T21:34:40.110282" level="INFO">${due_date_string} = 7.1.2025</msg>
+<var>${due_date_string}</var>
+<arg>${due_date_string}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.108771" elapsed="0.002055"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.110826" level="INFO">Due Date String (Stripped): 7.1.2025</msg>
+<arg>Due Date String (Stripped): ${due_date_string}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.110826" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-12-12T21:34:40.110826" level="INFO">${due_date} = 2025-01-07</msg>
+<var>${due_date}</var>
+<arg>${due_date_string}</arg>
+<arg>result_format=%Y-%m-%d</arg>
+<arg>date_format=%d.%m.%Y</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.110826" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.110826" level="INFO">Converted Due Date: 2025-01-07</msg>
+<arg>Converted Due Date: ${due_date}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.110826" elapsed="0.000000"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-12-12T21:34:40.110826" level="INFO">${current_date} = 2024-12-12</msg>
+<var>${current_date}</var>
+<arg>result_format=%Y-%m-%d</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.110826" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.110826" level="INFO">Current Date: 2024-12-12</msg>
+<arg>Current Date: ${current_date}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.110826" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.110826" level="INFO">${difference} = 26</msg>
+<var>${difference}</var>
+<arg>(datetime.datetime.strptime('${due_date}', '%Y-%m-%d') - datetime.datetime.strptime('${current_date}', '%Y-%m-%d')).days</arg>
+<arg>datetime</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.110826" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.110826" level="INFO">Difference in Days: 26</msg>
+<arg>Difference in Days: ${difference}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.110826" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${difference} &lt; ${DAYS_TO_EXPIRE}</arg>
+<arg>Click</arg>
+<arg>${row}//td[@class="text-left checkbox-col"]//input[@type="checkbox"]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.110826" elapsed="0.016678"/>
+</kw>
+<var name="${index}">6</var>
+<status status="PASS" start="2024-12-12T21:34:40.060757" elapsed="0.066747"/>
+</iter>
+<iter>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-12-12T21:34:40.127504" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-12T21:34:40.127504" level="INFO">${row} = //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][8]</msg>
+<var>${row}</var>
+<arg>//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][${index + 1}]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-12-12T21:34:40.127504" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-12-12T21:34:40.160917" level="INFO">Text: 'Eräpäivä: 7.1.2025'</msg>
+<msg time="2024-12-12T21:34:40.160917" level="INFO">${due_date_text} = Eräpäivä: 7.1.2025</msg>
+<var>${due_date_text}</var>
+<arg>${row}//td[@class="checkedout-status-information"]//strong[contains(text(), 'Eräpäivä')]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.127504" elapsed="0.033413"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.160917" level="INFO">Due Date Text: Eräpäivä: 7.1.2025</msg>
+<arg>Due Date Text: ${due_date_text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.160917" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${due_date_text}' == ''</arg>
+<arg>Fail</arg>
+<arg>Eräpäiväteksti on tyhjä rivillä ${index + 1}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.160917" elapsed="0.000000"/>
+</kw>
+<kw name="Remove String" owner="String">
+<msg time="2024-12-12T21:34:40.160917" level="INFO">${due_date_string} =  7.1.2025</msg>
+<var>${due_date_string}</var>
+<arg>${due_date_text}</arg>
+<arg>${DUE_DATE_PREFIX}</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.160917" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.160917" level="INFO">After Removing Prefix:  7.1.2025</msg>
+<arg>After Removing Prefix: ${due_date_string}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.160917" elapsed="0.000000"/>
+</kw>
+<kw name="Strip String" owner="String">
+<msg time="2024-12-12T21:34:40.160917" level="INFO">${due_date_string} = 7.1.2025</msg>
+<var>${due_date_string}</var>
+<arg>${due_date_string}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.160917" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.160917" level="INFO">Due Date String (Stripped): 7.1.2025</msg>
+<arg>Due Date String (Stripped): ${due_date_string}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.160917" elapsed="0.015011"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-12-12T21:34:40.177555" level="INFO">${due_date} = 2025-01-07</msg>
+<var>${due_date}</var>
+<arg>${due_date_string}</arg>
+<arg>result_format=%Y-%m-%d</arg>
+<arg>date_format=%d.%m.%Y</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.177555" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.177555" level="INFO">Converted Due Date: 2025-01-07</msg>
+<arg>Converted Due Date: ${due_date}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.177555" elapsed="0.000000"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-12-12T21:34:40.177555" level="INFO">${current_date} = 2024-12-12</msg>
+<var>${current_date}</var>
+<arg>result_format=%Y-%m-%d</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.177555" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.177555" level="INFO">Current Date: 2024-12-12</msg>
+<arg>Current Date: ${current_date}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.177555" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.177555" level="INFO">${difference} = 26</msg>
+<var>${difference}</var>
+<arg>(datetime.datetime.strptime('${due_date}', '%Y-%m-%d') - datetime.datetime.strptime('${current_date}', '%Y-%m-%d')).days</arg>
+<arg>datetime</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.177555" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.177555" level="INFO">Difference in Days: 26</msg>
+<arg>Difference in Days: ${difference}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.177555" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${difference} &lt; ${DAYS_TO_EXPIRE}</arg>
+<arg>Click</arg>
+<arg>${row}//td[@class="text-left checkbox-col"]//input[@type="checkbox"]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.177555" elapsed="0.000000"/>
+</kw>
+<var name="${index}">7</var>
+<status status="PASS" start="2024-12-12T21:34:40.127504" elapsed="0.050051"/>
+</iter>
+<iter>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-12-12T21:34:40.194146" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-12T21:34:40.194146" level="INFO">${row} = //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][9]</msg>
+<var>${row}</var>
+<arg>//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][${index + 1}]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-12-12T21:34:40.194146" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-12-12T21:34:40.227726" level="INFO">Text: 'Eräpäivä: 7.1.2025'</msg>
+<msg time="2024-12-12T21:34:40.227726" level="INFO">${due_date_text} = Eräpäivä: 7.1.2025</msg>
+<var>${due_date_text}</var>
+<arg>${row}//td[@class="checkedout-status-information"]//strong[contains(text(), 'Eräpäivä')]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.194146" elapsed="0.033580"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.227726" level="INFO">Due Date Text: Eräpäivä: 7.1.2025</msg>
+<arg>Due Date Text: ${due_date_text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.227726" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${due_date_text}' == ''</arg>
+<arg>Fail</arg>
+<arg>Eräpäiväteksti on tyhjä rivillä ${index + 1}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.227726" elapsed="0.000000"/>
+</kw>
+<kw name="Remove String" owner="String">
+<msg time="2024-12-12T21:34:40.227726" level="INFO">${due_date_string} =  7.1.2025</msg>
+<var>${due_date_string}</var>
+<arg>${due_date_text}</arg>
+<arg>${DUE_DATE_PREFIX}</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.227726" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.227726" level="INFO">After Removing Prefix:  7.1.2025</msg>
+<arg>After Removing Prefix: ${due_date_string}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.227726" elapsed="0.000000"/>
+</kw>
+<kw name="Strip String" owner="String">
+<msg time="2024-12-12T21:34:40.227726" level="INFO">${due_date_string} = 7.1.2025</msg>
+<var>${due_date_string}</var>
+<arg>${due_date_string}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.227726" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.227726" level="INFO">Due Date String (Stripped): 7.1.2025</msg>
+<arg>Due Date String (Stripped): ${due_date_string}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.227726" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-12-12T21:34:40.244150" level="INFO">${due_date} = 2025-01-07</msg>
+<var>${due_date}</var>
+<arg>${due_date_string}</arg>
+<arg>result_format=%Y-%m-%d</arg>
+<arg>date_format=%d.%m.%Y</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.242236" elapsed="0.001914"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.244150" level="INFO">Converted Due Date: 2025-01-07</msg>
+<arg>Converted Due Date: ${due_date}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.244150" elapsed="0.000000"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-12-12T21:34:40.244150" level="INFO">${current_date} = 2024-12-12</msg>
+<var>${current_date}</var>
+<arg>result_format=%Y-%m-%d</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.244150" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.244150" level="INFO">Current Date: 2024-12-12</msg>
+<arg>Current Date: ${current_date}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.244150" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.244150" level="INFO">${difference} = 26</msg>
+<var>${difference}</var>
+<arg>(datetime.datetime.strptime('${due_date}', '%Y-%m-%d') - datetime.datetime.strptime('${current_date}', '%Y-%m-%d')).days</arg>
+<arg>datetime</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.244150" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.244150" level="INFO">Difference in Days: 26</msg>
+<arg>Difference in Days: ${difference}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.244150" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${difference} &lt; ${DAYS_TO_EXPIRE}</arg>
+<arg>Click</arg>
+<arg>${row}//td[@class="text-left checkbox-col"]//input[@type="checkbox"]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.244150" elapsed="0.000000"/>
+</kw>
+<var name="${index}">8</var>
+<status status="PASS" start="2024-12-12T21:34:40.177555" elapsed="0.066595"/>
+</iter>
+<iter>
+<kw name="Get Element" owner="Browser">
+<msg time="2024-12-12T21:34:40.260829" level="INFO">Locator found successfully.</msg>
+<msg time="2024-12-12T21:34:40.260829" level="INFO">${row} = //tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][10]</msg>
+<var>${row}</var>
+<arg>//tr[starts-with(@id, 'recordkeski') and contains(@class, 'myresearch-row')][${index + 1}]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2024-12-12T21:34:40.244150" elapsed="0.016679"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-12-12T21:34:40.277466" level="INFO">Text: 'Eräpäivä: 9.1.2025'</msg>
+<msg time="2024-12-12T21:34:40.277466" level="INFO">${due_date_text} = Eräpäivä: 9.1.2025</msg>
+<var>${due_date_text}</var>
+<arg>${row}//td[@class="checkedout-status-information"]//strong[contains(text(), 'Eräpäivä')]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.260829" elapsed="0.016637"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.292477" level="INFO">Due Date Text: Eräpäivä: 9.1.2025</msg>
+<arg>Due Date Text: ${due_date_text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.277466" elapsed="0.015011"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${due_date_text}' == ''</arg>
+<arg>Fail</arg>
+<arg>Eräpäiväteksti on tyhjä rivillä ${index + 1}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.292477" elapsed="0.001641"/>
+</kw>
+<kw name="Remove String" owner="String">
+<msg time="2024-12-12T21:34:40.294118" level="INFO">${due_date_string} =  9.1.2025</msg>
+<var>${due_date_string}</var>
+<arg>${due_date_text}</arg>
+<arg>${DUE_DATE_PREFIX}</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.294118" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.294118" level="INFO">After Removing Prefix:  9.1.2025</msg>
+<arg>After Removing Prefix: ${due_date_string}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.294118" elapsed="0.000000"/>
+</kw>
+<kw name="Strip String" owner="String">
+<msg time="2024-12-12T21:34:40.294118" level="INFO">${due_date_string} = 9.1.2025</msg>
+<var>${due_date_string}</var>
+<arg>${due_date_string}</arg>
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.294118" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.294118" level="INFO">Due Date String (Stripped): 9.1.2025</msg>
+<arg>Due Date String (Stripped): ${due_date_string}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.294118" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-12-12T21:34:40.294118" level="INFO">${due_date} = 2025-01-09</msg>
+<var>${due_date}</var>
+<arg>${due_date_string}</arg>
+<arg>result_format=%Y-%m-%d</arg>
+<arg>date_format=%d.%m.%Y</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.294118" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.294118" level="INFO">Converted Due Date: 2025-01-09</msg>
+<arg>Converted Due Date: ${due_date}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.294118" elapsed="0.000000"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-12-12T21:34:40.294118" level="INFO">${current_date} = 2024-12-12</msg>
+<var>${current_date}</var>
+<arg>result_format=%Y-%m-%d</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.294118" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.294118" level="INFO">Current Date: 2024-12-12</msg>
+<arg>Current Date: ${current_date}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.294118" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.311152" level="INFO">${difference} = 28</msg>
+<var>${difference}</var>
+<arg>(datetime.datetime.strptime('${due_date}', '%Y-%m-%d') - datetime.datetime.strptime('${current_date}', '%Y-%m-%d')).days</arg>
+<arg>datetime</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.294118" elapsed="0.017034"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-12T21:34:40.311152" level="INFO">Difference in Days: 28</msg>
+<arg>Difference in Days: ${difference}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.311152" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${difference} &lt; ${DAYS_TO_EXPIRE}</arg>
+<arg>Click</arg>
+<arg>${row}//td[@class="text-left checkbox-col"]//input[@type="checkbox"]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-12-12T21:34:40.311152" elapsed="0.000000"/>
+</kw>
+<var name="${index}">9</var>
+<status status="PASS" start="2024-12-12T21:34:40.244150" elapsed="0.067002"/>
+</iter>
+<var>${index}</var>
+<value>0</value>
+<value>len(${rows})</value>
+<status status="PASS" start="2024-12-12T21:34:38.478855" elapsed="1.832297"/>
+</for>
+<status status="PASS" start="2024-12-12T21:34:37.818272" elapsed="2.492880"/>
+</kw>
+<status status="PASS" start="2024-12-12T21:34:35.464588" elapsed="4.846564"/>
+</test>
+<doc>Renew Loans at Keskikirjastot</doc>
+<status status="PASS" start="2024-12-12T21:34:27.618500" elapsed="12.709000"/>
+</suite>
+<status status="PASS" start="2024-12-12T21:34:27.611330" elapsed="12.887594"/>
+</suite>
+<status status="PASS" start="2024-12-12T21:34:27.569432" elapsed="12.929492"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Renew-Loans-At-Keskikirjastot--Robot-Framework">Renew-Loans-At-Keskikirjastot--Robot-Framework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Automation">Renew-Loans-At-Keskikirjastot--Robot-Framework.Automation</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Automate">Renew-Loans-At-Keskikirjastot--Robot-Framework.Automation.Automate</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
